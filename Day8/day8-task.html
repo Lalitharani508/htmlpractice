@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D8-t</title>
+</head>
+<body>
+<center><fieldset>
+    <legend>Registartion Form</legend>
+    <form action="./login.txt">
+        <div id="name">
+            <label for="name1">Full Name: </label>
+            <input type="text" id="name1" required pattern="[A-Za-z]{3,15}" 
+            title="you need to fill the feild with alphabets not numbers"/>
+        </div><br><br>
+        <div id="mail">
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="" required 
+            pattern="[a-zA-Z0-9_-#$%^&*]+@[a-z0-9]+.[a-z]{2,}" title="Enter valid email">
+        </div><br><br>
+        <div id="password">
+            <label for="pass">Password: </label>
+            <input type="text" id="pass" required
+            pattern="(?=.*[A-Z]{3})(?=.*[a-z]{3})(?=.*[#$%^&]{2}).{8,15}"
+            title="you need to fill the format as atleast 3 caps , atleast 3 smalls and atleast 3 specaial chars">
+            </div><br><br>
+            <button type="submit">Submit</button>
+        </form>
+</fieldset></center>
+    
+</body>
+</html>
